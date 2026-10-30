@@ -1,4 +1,5 @@
 # ask
+npm package: [`@protokol11/pi-ask`](https://www.npmjs.com/package/@protokol11/pi-ask). Source of truth: [agent-governance](https://github.com/protokol11/agent-governance) monorepo.
 
 One `ask` tool for pi: a TUI questionnaire whose selected answers come back as text.
 
@@ -67,6 +68,20 @@ Two design points carry the rest:
 Every option label doubles as its answer, so there is no separate value field to
 keep in sync. A question with no options and `allowOther: false` still renders one
 "Type something." row: leaving a question unanswerable would trap the overlay.
+
+## Quick start
+
+```sh
+npm install @protokol11/pi-ask
+```
+
+Or from a clone of this repo:
+
+```sh
+cp -r pi-ask ~/.pi/agent/extensions/pi-ask
+```
+
+Details below.
 
 ## Install
 
